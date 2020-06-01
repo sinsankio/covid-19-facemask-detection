@@ -7,7 +7,6 @@ model = load_model('model-017.model')
 faceClassifier = openCV.CascadeClassifier("haarcascade_frontalface_default.xml")
 
 camera = openCV.VideoCapture(0)
-#camera = openCV.VideoCapture("http://192.168.1.101:4747/video")
 labels = {0 : "SAFE", 1 : "NOT SAFE"}
 colors = {0 : (0, 255, 0), 1 : (0, 0, 255)}
 
